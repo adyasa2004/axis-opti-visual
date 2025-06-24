@@ -22,7 +22,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('http://127.0.0.1:5050/optimize', formData);
+      const res = await axios.post("https://axis-backend-c9m2.onrender.com/optimize", formData);
       setCost(res.data.cost);
       setRectangle(res.data.rectangle);
       setBuildings(res.data.buildings || []);
