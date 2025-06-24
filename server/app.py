@@ -23,7 +23,7 @@ def optimize():
             input_data = f.read()
 
         result = subprocess.run(
-            ['./axis_optimizer'],
+            ['./axis_optimizer.bin'],
             input=input_data,
             text=True,
             capture_output=True,
